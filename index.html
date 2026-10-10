@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Student e-Portfolio</title>
+<meta name="description" content="Student e-Portfolio: labs, secure-coding projects, reflection, skills and resources.">
+<style>
+:root{--bg:#f6f8fb;--card:#fff;--text:#1c2430;--muted:#5a6676;--accent:#2563eb;--accent2:#1e40af;--border:#e2e8f0;--hero1:#1e3a8a;--hero2:#2563eb}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1622;--card:#182131;--text:#e6ebf2;--muted:#9aa7b8;--accent:#60a5fa;--accent2:#93c5fd;--border:#2a364a;--hero1:#0b1530;--hero2:#1d4ed8}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--accent)}
+nav{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--border);display:flex;flex-wrap:wrap;justify-content:center;gap:.25rem;padding:.5rem}
+nav a{text-decoration:none;color:var(--text);padding:.45rem .9rem;border-radius:999px;font-weight:600;font-size:.95rem}
+nav a:hover,nav a:focus{background:var(--accent);color:#fff}
+header{background:linear-gradient(135deg,var(--hero1),var(--hero2));color:#fff;padding:4rem 1.25rem 3rem;text-align:center}
+header h1{margin:0 0 .5rem;font-size:clamp(1.8rem,5vw,3rem)}
+header p{max-width:720px;margin:.5rem auto}
+.meta{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-top:1rem}
+.meta span{background:rgba(255,255,255,.18);padding:.3rem .8rem;border-radius:999px;font-size:.9rem}
+section{max-width:1100px;margin:0 auto;padding:3rem 1.25rem}
+section>h2{font-size:1.8rem;margin:0 0 1.25rem;border-left:5px solid var(--accent);padding-left:.75rem}
+.grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fill,minmax(310px,1fr))}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.1rem;display:flex;flex-direction:column;gap:.6rem;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.card h3{margin:0;font-size:1.1rem}
+.card p{margin:0;color:var(--muted);font-size:.95rem}
+.card .refl{border-left:3px solid var(--accent);padding-left:.7rem;color:var(--text)}
+.video{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#000}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.btn{align-self:flex-start;display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:.5rem 1rem;border-radius:8px}
+.btn:hover,.btn:focus{background:var(--accent2)}
+.problem{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:1.1rem;margin-bottom:1.25rem}
+.problem h3{margin:.2rem 0}
+.team{list-style:none;padding:0;margin:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.team li{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem}
+.team strong{display:block}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;margin:0}
+.tags li{background:var(--card);border:1px solid var(--border);padding:.4rem .9rem;border-radius:999px;font-weight:600}
+ul.res{padding-left:1.2rem}
+footer{text-align:center;padding:2rem 1rem;border-top:1px solid var(--border);color:var(--muted)}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main navigation">
+  <a href="#home">Home</a>
+  <a href="#labs">Labs</a>
+  <a href="#projects">Projects</a>
+  <a href="#reflection">Reflection</a>
+  <a href="#skills">Skills</a>
+  <a href="#resources">Resources</a>
+</nav>
+
+<header id="home">
+  <h1>Student e-Portfolio</h1>
+  <p>[WRITE YOUR INTRO]</p>
+  <div class="meta">
+    <span>Programme: [YOUR PROGRAMME]</span>
+    <span>Instructor: [INSTRUCTOR NAME]</span>
+  </div>
+</header>
+
+<section aria-labelledby="team-h">
+  <h2 id="team-h">Group Members</h2>
+  <ul class="team">
+    <li><strong>[YOUR NAME]</strong>Matric No: [YOUR MATRIC]<br>Role: [Your Role]<br>Contribution: [Contribution]</li>
+    <li><strong>[YOUR NAME]</strong>Matric No: [YOUR MATRIC]<br>Role: [Your Role]<br>Contribution: [Contribution]</li>
+    <li><strong>[YOUR NAME]</strong>Matric No: [YOUR MATRIC]<br>Role: [Your Role]<br>Contribution: [Contribution]</li>
+    <li><strong>[YOUR NAME]</strong>Matric No: [YOUR MATRIC]<br>Role: [Your Role]<br>Contribution: [Contribution]</li>
+  </ul>
+</section>
+
+<section id="labs" aria-labelledby="labs-h">
+  <h2 id="labs-h">Labs</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>Lab 1: [LAB TITLE]</h3>
+      <p>[Short lab description]</p>
+      <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Lab 1 demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <p class="refl">[2–3 sentence reflection]</p>
+    </article>
+    <article class="card">
+      <h3>Lab 2: [LAB TITLE]</h3>
+      <p>[Short lab description]</p>
+      <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Lab 2 demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <p class="refl">[2–3 sentence reflection]</p>
+    </article>
+    <article class="card">
+      <h3>Lab 3: [LAB TITLE]</h3>
+      <p>[Short lab description]</p>
+      <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Lab 3 demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <p class="refl">[2–3 sentence reflection]</p>
+    </article>
+  </div>
+</section>
+
+<section id="projects" aria-labelledby="proj-h">
+  <h2 id="proj-h">Projects</h2>
+  <div class="problem">
+    <h3>[PROJECT NAME]</h3>
+    <p><strong>Problem Statement:</strong> [1–2 SENTENCES]</p>
+    <p><strong>Vulnerability Solution:</strong> six cases, each with a live code implementation.</p>
+  </div>
+  <div class="grid">
+    <article class="card">
+      <h3>Case 1: Login Test</h3>
+      <p>Live code vulnerability implementation.</p>
+      <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 1 Login Test demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <p class="refl">[2–3 SENTENCES]</p>
+      <a class="btn" href="[LINK]" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+    <article class="card">
+      <h3>Case 2: Data 1</h3>
+      <p>Live code vulnerability implementation.</p>
+      <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 2 Data 1 demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <p class="refl">[2–3 SENTENCES]</p>
+      <a class="btn" href="[LINK]" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+    <article class="card">
+      <h3>Case 3: Data 2</h3>
+      <p>Live code vulnerability implementation.</p>
+      <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 3 Data 2 demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <p class="refl">[2–3 SENTENCES]</p>
+      <a class="btn" href="[LINK]" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+    <article class="card">
+      <h3>Case 4: SQL Injection</h3>
+      <p>Live code vulnerability implementation.</p>
+      <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 4 SQL Injection demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <p class="refl">[2–3 SENTENCES]</p>
+      <a class="btn" href="[LINK]" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+    <article class="card">
+      <h3>Case 5: Placeholder 1</h3>
+      <p>Live code vulnerability implementation.</p>
+      <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 5 demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <p class="refl">[2–3 SENTENCES]</p>
+      <a class="btn" href="[LINK]" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+    <article class="card">
+      <h3>Case 6: Placeholder 2</h3>
+      <p>Live code vulnerability implementation.</p>
+      <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Case 6 demo video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <p class="refl">[2–3 SENTENCES]</p>
+      <a class="btn" href="[LINK]" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+  </div>
+</section>
+
+<section id="reflection" aria-labelledby="refl-h">
+  <h2 id="refl-h">Reflection &amp; Learning Journey</h2>
+  <div class="problem"><p>[3–4 SENTENCES]</p></div>
+</section>
+
+<section id="skills" aria-labelledby="skills-h">
+  <h2 id="skills-h">Skills &amp; Tech Stack</h2>
+  <ul class="tags">
+    <li>SQL Injection</li>
+    <li>Python</li>
+    <li>[SKILL 3]</li>
+    <li>[SKILL 4]</li>
+  </ul>
+</section>
+
+<section id="resources" aria-labelledby="res-h">
+  <h2 id="res-h">Resources</h2>
+  <ul class="res">
+    <li>[API / LIBRARY 1]</li>
+    <li>[API / LIBRARY 2]</li>
+    <li>Acknowledgement: AI assistance was used in preparing parts of this portfolio. All content was reviewed and verified by the author.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2026 Adoom &middot; Matric No: A211176</p>
+</footer>
+
+</body>
+</html>
